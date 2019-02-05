@@ -1,6 +1,80 @@
 // alert("im onlione")
 console.dir(document);
+var gameBoard = document.getElementsByClassName('gameboard')
+gameBoard.addeventListner("click", dropCoin(){
+  for(var i=0; i<buttons.length; i++)
+});
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// rows:10;
+// colums:10;
+// var makeGrid = getElementById('grid')
+// for (var r=0; r<rows; r++){
+//
+// }
+
+
+
+
+
+
+
+/*
 var gridSquare = [
   [0,0],[0,1],[0,2],[0,3],
   [1,0],[1,1],[1,2],[1,3],
