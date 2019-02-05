@@ -1,21 +1,20 @@
 // alert("im onlione")
 console.dir(document);
 
-var rows =3;
-var colums =3;
-var gridSquare = document.querySelector('grid_square')
-function gridSquare(){
-for (var r = 0; r <rows; r++){
-  document.writeIn += '<tr>';
-    for (var c =0; c<colums; c++){
-      document.writeIn += '<td' + c + "</td>";
-    }
-  document.writeIn += '</tr>';
+var gridSquare = [
+  [0,0],[0,1],[0,2],[0,3],
+  [1,0],[1,1],[1,2],[1,3],
+  [2,0],[2,1],[2,2],[2,3],
+  [3,0],[3,1],[3,2],[3,3],
+]
+function renderGridSquare(){
+for (var r = 0; r < gridSquare.length; r++){
+  console.log(gridSquare[r])
 
 
   }
 };
-
+renderGridSquare ();
 
 
 

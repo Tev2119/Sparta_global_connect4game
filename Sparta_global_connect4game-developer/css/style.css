@@ -6,11 +6,17 @@
 }
 
 .grid_square {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border: 1;
-  padding: 30px;
-  font-size: 40px;
   text-align: center;
 	width: 60px;
+  height: 50px;
+  background-color: red;
+}
+
+.square {
+  background-color: blue;
+  border: 1px solid black;
+}
+#grid{
+  background-color: green;
+  border: solid black
 }
