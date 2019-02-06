@@ -1,5 +1,9 @@
 .col-md-1{
   border-style: solid;
   border-color: black;
-  
+  display:inline-block;
+}
+.next_red{
+  background-color: red;
+
 }
