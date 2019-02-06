@@ -3,7 +3,9 @@ $(document).ready(function(){
   console.log("hello");
 
 var player_color=[];
-player_1="black";
+// player_1.style.color="red"
+var player_1= $(".class").css("background-color","red");
+// $(player_1)
 player_2="yellow";
 // var active_player=0;
 
@@ -15,10 +17,26 @@ var gridval = $(".col-md-1").each(function(index){
 
 var coinDrop1 = document.getElementsByName('coin1');
 $(".coin1").click(function(){
-  for (var i=64 ; i>7; i-=8){
-console.log(gridval[i]);
+  for (var i = 64; i >7; i-=8) { //go through anwser array
 
-  }
+        if (gridval[i].innerHTML == 8){
+          // gridval[i].css = player_1;
+          gridval[i].innerHTML= $("#col1").css("background-color","red");
+         gridval[i].innerHTML= 1;
+         break;
+        }
+ }
+  // for (var i=64 ; i>7; i-=8){
+
+// console.log(gridval[i]);
+// for (var i = 64; i >7; i-=8) { //go through col1 array
+//
+//        if (gridval[i].innerHTML == ""){
+//          gridval[i].innerHTML = player_1;
+//
+//        }
+//  }
+  // }
 
 });
 var coinDrop2 = document.getElementsByName('coin2');

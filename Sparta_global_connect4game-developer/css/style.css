@@ -1,9 +1,13 @@
 .col-md-1{
   border-style: solid;
   border-color: black;
-  display:inline-block;
+  display:block;
+  padding: ;
 }
 .next_red{
   background-color: red;
 
+}
+.player1{
+background-color: red;
 }
