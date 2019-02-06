@@ -2,6 +2,12 @@ $(document).ready(function(){
   console.dir(document);
   console.log("hello");
 
+var player_color=[];
+player_1="black";
+player_2="yellow";
+// var active_player=0;
+
+
 var gridval = $(".col-md-1").each(function(index){
 /*  console.log(index+":"+$(this).text());*/
 });
@@ -71,6 +77,7 @@ console.log(gridval[i]);
   }
 
 });
+
 
 
 //  for (var i=8 ; i<=gridval.length; i-=8){
