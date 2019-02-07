@@ -1,9 +1,20 @@
+.container{
+  width: 105%;
+	height: 100%;
+	/* margin: auto; */
+	/* background-color: black; */
+	/* border-radius: 10px; */
+	/* border: 10px solid yellow; */
+}
+/* #coins{ */
+  /* width: 1639px */
+/* } */
 .col-md-1{
   border-style: solid;
-  border-color: black;
-  display:block;
-  padding: ;
-  min-width:
+  border-color: Blue;
+  /* display:block; */
+
+
 }
 .next_red{
   background-color: red;
