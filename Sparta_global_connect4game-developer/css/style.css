@@ -3,11 +3,13 @@
   border-color: black;
   display:block;
   padding: ;
+  min-width:
 }
 .next_red{
   background-color: red;
 
 }
 .player1{
-background-color: red;
+/* background-color: red; */
+color: red;
 }
