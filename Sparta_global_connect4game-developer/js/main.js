@@ -2,6 +2,22 @@ $(document).ready(function(){
   console.dir(document);
   console.log("hello");
 
+  // var coinDrop1 = document.getElementsByName('coin1');
+  //
+  // var coinDrop2 = document.getElementsByName('coin2');
+  //
+  // var coinDrop3 = document.getElementsByName('coin3');
+  //
+  // var coinDrop4 = document.getElementsByName('coin4');
+  //
+  // var coinDrop5 = document.getElementsByName('coin5');
+  //
+  // var coinDrop6 = document.getElementsByName('coin6');
+  //
+  // var coinDrop7 = document.getElementsByName('coin7');
+  //
+  // var coinDrop8 = document.getElementsByName('coin8');
+
   var player_color=[];
   // player_1.style.color="red"
   var player_1 = 1;
@@ -42,6 +58,7 @@ $(document).ready(function(){
       }
     }
   });
+  
   var coinDrop2 = document.getElementsByName('coin2');
   $(".coin2").click(function(){
     for (var i=colum_2[0] ; i>colum_2.length; i-=8){
@@ -61,6 +78,7 @@ $(document).ready(function(){
       }
     }
   });
+
   var coinDrop3 = document.getElementsByName('coin3');
   $(".coin3").click(function(){
     for (var i=colum_3[0] ; i>colum_3.length; i-=8){
@@ -80,6 +98,7 @@ $(document).ready(function(){
       }
     }
   });
+
   var coinDrop4 = document.getElementsByName('coin4');
   $(".coin4").click(function(){
     for (var i=colum_4[0] ; i>colum_4.length; i-=8){
@@ -99,6 +118,7 @@ $(document).ready(function(){
       }
     }
   });
+
   var coinDrop5 = document.getElementsByName('coin5');
   $(".coin5").click(function(){
     for (var i=colum_5[0] ; i>colum_5.length; i-=8){

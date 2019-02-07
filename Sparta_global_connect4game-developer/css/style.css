@@ -5,22 +5,37 @@
 	/* background-color: black; */
 	/* border-radius: 10px; */
 	/* border: 10px solid yellow; */
+  text-align: center;
+  /* margin: auto; */
+  /* float: inherit; */
 }
-/* #coins{ */
-  /* width: 1639px */
-/* } */
+ #coins{
+   /* width: 1639px  */
+   background-color: orange;
+   text-align: center;
+   /* cut the line soo that it extends only to the margin of grid */
+  }
 .col-md-1{
   border-style: solid;
-  border-color: Blue;
+  border-color: black;
+  background-color:yellow;
   /* display:block; */
-
-
+/* margin: auto; */
+/* position: relative; */
+  /* border-radius: 50%; */
+/* margin: auto; */
+  width: 10%;
+  padding: 20px;
 }
-.next_red{
+.jumbotron{
+  text-align: center;
+  background: url("images/kidGoku.jpg");
+}
+/* .next_red{
   background-color: red;
 
 }
 .player1{
 /* background-color: red; */
 color: red;
-}
+} */
