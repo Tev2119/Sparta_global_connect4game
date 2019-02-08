@@ -8,6 +8,7 @@
   text-align: center;
   /* margin: auto; */
   /* float: inherit; */
+  background-color: orange;
 }
  #coins{
    /* width: 1639px  */
@@ -31,6 +32,10 @@
   text-align: center;
   background: url("images/kidGoku.jpg");
 }
+.col-md-1{
+ height: 50px
+}
+
 /* .next_red{
   background-color: red;
 
