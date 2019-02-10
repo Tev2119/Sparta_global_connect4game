@@ -2,7 +2,7 @@ $(document).ready(function(){
   // console.dir(document);
   // console.log("hello");
 
-alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequences have been extended making the dificulty harder. Click the coinDrop buttons to drop your coin (player1 = 1 & player2 =2) and match a concequetive array of either coin 4 times to win')
+  alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequences have been extended making the dificulty harder. Click the coinDrop buttons to drop your coin (player1 = 1 & player2 =2) and match a concequetive array of either coin 4 times to win')
 
   var player_color=[];
   // player_1.style.color="red"
@@ -31,6 +31,7 @@ alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequenc
   var gridval = $(".col-md-1").each(function(index){//return array of bootsrap grid
     // console.log(index+":"+$(this).text());
   });
+  //check grid array is outputting
   // console.log(gridval)
 
   var getColumnArray = function(col) {
@@ -279,7 +280,6 @@ alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequenc
         alert('WINNER FOUND P1');
         player_1 = 1;
       }
-
     }
   }
 
