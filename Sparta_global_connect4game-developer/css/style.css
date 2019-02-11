@@ -27,7 +27,7 @@
 }
 .col-md-1{
  height: 50px;
- /* text-indent: -9999px; */
+ text-indent: -9999px;
 }
 #title{
   color: #300000;
@@ -45,5 +45,5 @@
 #homeScreen{
   text-decoration: underline;
   text-decoration-color: orange;
-  color: blue;
+
 }

@@ -1,15 +1,20 @@
 $(document).ready(function(){
   // console.dir(document);
   // console.log("hello");
-  alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequences have been extended making the dificulty harder. Click the coinDrop buttons to drop your coin (player1 = 1 & player2 =2) and match a concequetive array of either coin 4 times to win')
+  alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequences have been extended making the dificulty harder. Click the coinDrop buttons to drop your coin (player1 = red & player2 =blue) and match a concequetive array of either coin 4 times to win')
 
-  var player_color=[];
   // player_1.style.color="red"
   var player_1 = 1;
   // $(player_1)
   var player_2 = 2;
   // var active_player=0;
-
+  // function player_color(){
+  //   if (player_1=1) {
+  //     gridval.innerText.style.backgroundColor = "red";
+  //   }else {
+  //     gridval.innerText.style.backgroundColor = "blue";
+  //   }
+  // };
   var colum_1 = [64,56,48,40,32,24,16,8];
   var colum_2 = [65,57,49,41,33,25,17,9];
   var colum_3 = [66,58,50,42,34,26,18,10];
@@ -115,10 +120,12 @@ $(document).ready(function(){
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
       }
     }
+    // player_color(gridval[i]);
     calculateWinner();
   });
 
@@ -130,12 +137,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -149,12 +159,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -168,12 +181,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -187,12 +203,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -206,12 +225,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -225,12 +247,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner();
@@ -244,12 +269,15 @@ $(document).ready(function(){
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
           player_1 = 1;
+          gridval[i].style.backgroundColor = "blue";
           break;
         }
+        //
       }
     }
     calculateWinner(); //somehow stop the game here for all buttons... if(calculateWinner) { then do shit }
