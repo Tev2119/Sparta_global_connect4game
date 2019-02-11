@@ -1,7 +1,6 @@
 $(document).ready(function(){
   // console.dir(document);
   // console.log("hello");
-
   alert('HOW TO PLAY Fusion 4 plays alot like connect4 however the winning sequences have been extended making the dificulty harder. Click the coinDrop buttons to drop your coin (player1 = 1 & player2 =2) and match a concequetive array of either coin 4 times to win')
 
   var player_color=[];
@@ -33,7 +32,6 @@ $(document).ready(function(){
   });
   //check grid array is outputting
   // console.log(gridval)
-
   var getColumnArray = function(col) {
     switch(col) {
       case 1:
@@ -103,7 +101,6 @@ $(document).ready(function(){
   $(".coin1").click(function(){
     for (var i = colum_1[0]; i >=colum_1.length; i-=8) { //go through anwser array
       // valueOf(gridval[8]);
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         //checking the innertext of the grid
         // console.log(gridval[i].innerText);
@@ -111,8 +108,9 @@ $(document).ready(function(){
           // gridval[i].css = player_1;
           // gridval[i].innerText= $("#col1").css("background-color","red");
           gridval[i].innerText= player_1;
-          player_1.style.color = "red";
+          // player_1.style.color = "red";
           player_1 = 0;
+          gridval[i].style.backgroundColor = "red";
           break;
         }else{
           gridval[i].innerText= player_2;
@@ -126,7 +124,6 @@ $(document).ready(function(){
 
   $(".coin2").click(function(){
     for (var i=colum_2[0] ; i>colum_2.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -146,7 +143,6 @@ $(document).ready(function(){
 
   $(".coin3").click(function(){
     for (var i=colum_3[0] ; i>colum_3.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -166,7 +162,6 @@ $(document).ready(function(){
 
   $(".coin4").click(function(){
     for (var i=colum_4[0] ; i>colum_4.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -186,7 +181,6 @@ $(document).ready(function(){
 
   $(".coin5").click(function(){
     for (var i=colum_5[0] ; i>colum_5.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -206,7 +200,6 @@ $(document).ready(function(){
 
   $(".coin6").click(function(){
     for (var i=colum_6[0] ; i>colum_6.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -225,7 +218,6 @@ $(document).ready(function(){
   });
 
   $(".coin7").click(function(){
-
     for (var i=colum_7[0] ; i>colum_7.length; i-=8){
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
@@ -246,7 +238,6 @@ $(document).ready(function(){
 
   $(".coin8").click(function(){
     for (var i=colum_8[0] ; i>colum_8.length; i-=8){
-
       if (gridval[i].innerText == "a" || gridval[i].innerText == "b"){
         if (player_1 == 1) {
           // gridval[i].css = player_1;
@@ -275,10 +266,10 @@ $(document).ready(function(){
     if(winnerInColumn() || winnerInRow() || winnerInDiagonalRight() || winnerInDiagonalLeft()) {
       if (player_1 == 1) {
         alert('WINNER FOUND P2');
-        player_1 = 0;
+        document.location.href="gameOverp2.html"
       }else{
         alert('WINNER FOUND P1');
-        player_1 = 1;
+        document.location.href="gameOverp1.html"
       }
     }
   }

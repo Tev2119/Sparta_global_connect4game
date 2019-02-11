@@ -35,3 +35,15 @@
 #page{
   background-color: orange;
 }
+.gameOverP1{
+
+}
+#gameOverP{
+  background-color: red;
+  text-align: center;
+}
+#homeScreen{
+  text-decoration: underline;
+  text-decoration-color: orange;
+  color: blue;
+}
